@@ -1,0 +1,111 @@
+body{
+    background-image:url(../imagens/definitivo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+.titulo h3{
+    color: white;
+    font-size: 24px;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+    margin-top: 15px;
+}
+
+.menu ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin-top: 15px;
+    margin-right: 130px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.menu ul li a:hover{
+    color:rgb(218, 158, 70)
+}
+.titulo h3:hover{
+    color: rgb(235, 52, 38);
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn a{
+    margin-top: 15px;
+    text-decoration: none;
+    border-radius: 15px;
+    height: 22px;
+
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn a:hover{
+    color: rgb(235, 52, 38);
+}
+
+.linha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linha hr{
+    width: 300px;
+}
+
+
+#social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 820px;
+
+    padding: 24px 0;
+    gap: 16px;
+
+    font-size: 40px;
+}
+
+#social a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    color: white;
+
+    transition: 0.3s;
+    border-radius: 50%;
+
+}
+
+#social a:hover{
+    color: rgb(235, 52, 38);
+}
