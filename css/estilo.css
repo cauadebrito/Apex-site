@@ -114,4 +114,6 @@ header{
 
 #social a:hover{
     color: rgb(235, 52, 38);
+    transform: scale(1.2);
+
 }
