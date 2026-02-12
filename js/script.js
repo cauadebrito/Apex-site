@@ -1,4 +1,4 @@
-//seliciona os elementos 
+//seleciona os elementos 
 
 const btnLogin = document.getElementById("btnLogin")
 const overlay = document.getElementById("overlay")
