@@ -1,9 +1,25 @@
 body{
-    background-image:url(../imagens/definitivo.png);
-    background-repeat: no-repeat;
-    background-size: cover;
     width: 100%;
     height: 100%;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: url("../imagens/definitivo.png") center/cover no-repeat;
+    z-index: -1;
+    animation: pulse 6s ease-in-out infinite alternate;
+    transition: transform 0.2s ease-out; /* adiciona suavidade ao parallax */
+}
+
+@keyframes pulse {
+    from {
+        filter: brightness(0.6);
+    }
+    to {
+        filter: brightness(1);
+    }
 }
 
 *{
@@ -12,6 +28,7 @@ body{
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 
 header{
     display: flex;
@@ -92,7 +109,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 730px;
+    margin-top: 790px;
 
     padding: 24px 0;
     gap: 16px;
