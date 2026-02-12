@@ -109,7 +109,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 790px;
+    margin-top: 700px;
 
     padding: 24px 0;
     gap: 16px;
@@ -134,3 +134,34 @@ header{
     transform: scale(1.2);
 
 }
+
+.overlay{
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(6px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s ease;
+    z-index: 999;
+}
+
+.overlay.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.overlay .container{
+    transform: scale(0.8);
+    transition: 0,4s ease;  
+}
+
+.overlay.active .container{
+    transform: scale(1);
+}
+
