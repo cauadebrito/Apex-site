@@ -16,3 +16,6 @@ overlay.addEventListener("click", function(e){
     }
 })
 
+document.getElementById("btnVoltar").addEventListener("click", function(){
+    window.location.href = "index.html";
+});
