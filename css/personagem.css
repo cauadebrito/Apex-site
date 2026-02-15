@@ -46,16 +46,12 @@ img:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
-    transition: 0.6s ease;
+    margin-top: 80px;
+
 }
 
 .video video{
-    width: 600px;
-}
-
-video:hover{
-    transform: scale(1.1);
+    width: 700px;
 }
 
 
