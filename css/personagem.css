@@ -6,8 +6,22 @@
 
 }
 
-*{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+body{
+    font-family: 'Orbitron', sans-serif;
+    background: hsla(13, 91%, 20%, 1.0);
+    background: radial-gradient(at center, hsla(13, 91%, 20%, 1.0), hsla(0, 0%, 1%, 1.0));
+    z-index: -1;
+    animation: pulse 4s ease-in-out infinite alternate;
+    transition: transform 0.2s ease-out; /* adiciona suavidade ao parallax */
+}
+
+@keyframes pulse {
+    from {
+        filter: brightness(0.8);
+    }
+    to {
+        filter: brightness(1);
+    }
 }
 
 .escada{
@@ -26,7 +40,7 @@
 }
 
 img:hover{
-    transform: rotatey(360deg)
+    transform: scale(1.2)
 }
 
 .texto{
@@ -34,29 +48,81 @@ img:hover{
     margin-right: 300px;
 }
 
-.texto h1{
-    text-align: center;
+
+h1{
+    background: linear-gradient(90deg, #ffffff, #ff4d4d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 0.7s;
 }
 
-.texto p{
-    text-align: center;
+h1:hover{
+    transform: scale(1.1);
 }
 
+
+
+h4{
+    color: #cfcfcf;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #ff4d4d,
+    transparent
+  );
+  margin: 30px 0;
+}
 .video{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 80px;
 
+
+
 }
+
+
 
 .video video{
     width: 700px;
+    cursor: pointer;
+    border: 3px solid rgba(255, 255, 255, 0.3);
 }
 
+.btn-voltar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.btn-voltar a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 
+    background-color: #8B1E1E;
+    width: 80px;
+    height: 40px;
+    border-radius: 10px;
+    color: #FFFFFF;
 
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+.btn-voltar a:hover {
+    transform: scale(1.2);
+}
 
 /*efeito da escada*/
 
