@@ -1,0 +1,68 @@
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.escada{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.escada img{
+    width: 250px;
+    height: 450px;
+    margin-top: 10px;
+    object-fit: cover;
+    transition: 1.0s ease;
+}
+
+img:hover{
+    transform: rotatey(360deg)
+}
+
+.texto{
+    margin-top: -30px;
+    margin-right: 300px;
+}
+
+.texto h1{
+    text-align: center;
+}
+
+.texto p{
+    text-align: center;
+}
+
+.video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    transition: 0.6s ease;
+}
+
+.video video{
+    width: 600px;
+}
+
+video:hover{
+    transform: scale(1.1);
+}
+
+
+
+
+
+/*efeito da escada*/
+
+.escada img:nth-child(1) { margin-left: 180px;}
+.escada img:nth-child(2) {margin-left: 470px;}
